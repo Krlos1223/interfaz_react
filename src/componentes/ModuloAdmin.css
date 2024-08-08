@@ -1,81 +1,89 @@
+/* Estilo para la imagen en el encabezado del panel de administración */
+.admin-header img {
+  max-width: 40%; /* Ancho máximo de la imagen al 40% del contenedor */
+  height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+  position: absolute; /* Posiciona la imagen de manera fija */
+  top: 190px; /* Posiciona la imagen a 190 píxeles desde la parte superior del contenedor */
+  right: 350px; /* Posiciona la imagen a 350 píxeles desde el borde derecho del contenedor */
+  border-radius: 90px; /* Redondea las esquinas de la imagen con un radio de 90 píxeles */
+}
 
-  .admin-header img {
-    max-width: 40%;
-    height: auto;
-    position: absolute;
-    top: 190px;
-    right: 350px;
-    border-radius: 90px;
-  }
-  
-  .admin-header h4 {
-    position: absolute;
-    top: -60px;
-    left: 56%;
-    transform: translateX(-50%);
-    font-size: 4em;
-  }
-  
-  #panel-administrador {
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;    
-  }
-    
-  .opcion {
-    margin-bottom: -10px;
-    text-align: left;
-    
-  }
-  
-  .opcion img {
-    max-width: 100px;
-    height: auto;
-    display: block;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-top: -10px;
-  }
-  
-  .opcion a {
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-    margin-left: -200px;
-    margin-top: 30px;
-    vertical-align: top;
-  }
-  
-  #enlaces-inferiores {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  #enlaces-inferiores .opcion:first-child {
-    margin-right: 350px;
-  }
-  
-  #enlaces-inferiores .opcion:last-child {
-    margin-right: 20px;
-  }
-  
-  #enlaces-inferiores .opcion:not(:last-child) a {
-    margin-right: 90px;
-  }
-  
-  #enlaces-inferiores .opcion:last-child p {
-    margin-left: 4px;
-  }
-  
-  #enlaces-inferiores .opcion:nth-last-child(2) p {
-    margin-left: 30px;
-  }
-  
-  #enlaces-inferiores .opcion:last-child img {
-    margin-top: -170px;
-  }
-  
-  #enlaces-inferiores .opcion:nth-last-child(2) img {
-    margin-top: -170px;
-  }
-  
+/* Estilo para el título en el encabezado del panel de administración */
+.admin-header h4 {
+  position: absolute; /* Posiciona el título de manera fija */
+  top: -60px; /* Posiciona el título 60 píxeles por encima de su contenedor */
+  left: 56%; /* Centra el título horizontalmente en relación al 56% del contenedor */
+  transform: translateX(-50%); /* Ajusta la posición para que esté completamente centrado */
+  font-size: 4em; /* Tamaño de la fuente del título */
+}
+
+/* Estilo para el contenedor del panel de administración */
+#panel-administrador {
+  max-width: 900px; /* Ancho máximo del contenedor al 90% del ancho del contenedor principal */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  text-align: center; /* Alinea el contenido al centro */
+}
+
+/* Estilo para las opciones dentro del panel */
+.opcion {
+  margin-bottom: -10px; /* Ajusta el espacio debajo de cada opción */
+  text-align: left; /* Alinea el texto de las opciones a la izquierda */
+}
+
+/* Estilo para las imágenes dentro de las opciones */
+.opcion img {
+  max-width: 100px; /* Ancho máximo de la imagen al 100px */
+  height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+  display: block; /* Muestra la imagen como un bloque */
+  margin-bottom: 10px; /* Espacio debajo de la imagen */
+  margin-left: 10px; /* Espacio a la izquierda de la imagen */
+  margin-top: -10px; /* Espacio arriba de la imagen */
+}
+
+/* Estilo para los enlaces dentro de las opciones */
+.opcion a {
+  text-decoration: none; /* Sin subrayado en el texto del enlace */
+  color: black; /* Color del texto del enlace */
+  display: inline-block; /* Muestra el enlace en línea con capacidad de bloque */
+  margin-left: -200px; /* Ajuste del espacio a la izquierda del enlace */
+  margin-top: 30px; /* Espacio arriba del enlace */
+  vertical-align: top; /* Alinea el enlace en la parte superior del contenedor */
+}
+
+/* Estilo para el contenedor de enlaces inferiores */
+#enlaces-inferiores {
+  display: flex; /* Usa el diseño flexible para alinear los elementos */
+  justify-content: flex-end; /* Alinea los elementos hacia el final del contenedor */
+}
+
+/* Estilo para el primer y último enlace en el contenedor de enlaces inferiores */
+#enlaces-inferiores .opcion:first-child {
+  margin-right: 350px; /* Espacio a la derecha del primer enlace */
+}
+
+#enlaces-inferiores .opcion:last-child {
+  margin-right: 20px; /* Espacio a la derecha del último enlace */
+}
+
+/* Espacio entre los enlaces en el contenedor de enlaces inferiores */
+#enlaces-inferiores .opcion:not(:last-child) a {
+  margin-right: 90px; /* Espacio a la derecha de los enlaces que no son el último */
+}
+
+/* Ajusta el espacio a la izquierda de los párrafos en los enlaces inferiores */
+#enlaces-inferiores .opcion:last-child p {
+  margin-left: 4px; /* Espacio a la izquierda del párrafo en el último enlace */
+}
+
+#enlaces-inferiores .opcion:nth-last-child(2) p {
+  margin-left: 30px; /* Espacio a la izquierda del párrafo en el penúltimo enlace */
+}
+
+/* Ajusta el espacio arriba de las imágenes en los enlaces inferiores */
+#enlaces-inferiores .opcion:last-child img {
+  margin-top: -170px; /* Espacio arriba de la imagen en el último enlace */
+}
+
+#enlaces-inferiores .opcion:nth-last-child(2) img {
+  margin-top: -170px; /* Espacio arriba de la imagen en el penúltimo enlace */
+}

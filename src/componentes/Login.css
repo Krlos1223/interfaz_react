@@ -1,77 +1,71 @@
 /* Estilos generales del cuerpo */
+.login-page::before {
+  content: ''; /* Esto no muestra nada, solo se usa para aplicar un estilo */
+  position: absolute; /* Posiciona el elemento de manera fija en relación con su contenedor */
+  top: 10%; /* Coloca el elemento a un 10% desde la parte superior del contenedor */
+  left: 2%; /* Coloca el elemento a un 2% desde el borde izquierdo del contenedor */
+  width: 96%; /* Ancho del 96% del contenedor, casi todo el ancho disponible */
+  height: 100%; /* Altura del 100% del contenedor, ocupa todo el alto */
+  background-color: #DFDEDE; /* Color de fondo gris claro */
+  border: 3px solid #707070; /* Borde gris oscuro de 3px de ancho */
+  z-index: -1; /* Coloca este elemento detrás de otros elementos */
+}
 
-  
-  .login-page::before {
-    content: ''; /* Contenido vacío */
-    position: absolute; /* Posicionamiento fijo */
-    top: 10%; /* Ajuste superior a 0 */
-    left: 2%; /* Ajuste izquierdo a 0 */
-    width: 96%; /* Ancho del 100% */
-    height: 100%; /* Altura del 100% */
-    background-color: #DFDEDE; /* Color de la segunda capa */
-    border: 3px solid #707070; /* Borde sólido de 5px de ancho con color #707070 */
-    z-index: -1; /* Coloca la capa detrás de todo */
-  }
-  
-  header {
-    text-align: center;
-  }
-  
-  .logo1 {
-    max-width: 30%; /* Ajusta el ancho máximo de la imagen al tamaño del contenedor */
-  height: auto; /* Hace que la altura de la imagen se ajuste automáticamente para mantener la proporción */
-  margin: 0 auto; /* Centra horizontalmente la imagen */
+header {
+  text-align: center; /* Centra el texto dentro del encabezado */
+}
+
+.logo1 {
+  max-width: 30%; /* La imagen no será más ancha del 30% del contenedor */
+  height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
   display: block; /* Hace que la imagen se comporte como un bloque */
-  border-radius: 60px;
-  }
-  
-  #inicio-sesion {
-    max-width: 400px; /* Ancho máximo del formulario */
-    margin: 0 auto; /* Centra horizontalmente el formulario */
-    text-align: center; /* Alinea el contenido al centro */
+  border-radius: 60px; /* Bordes redondeados de 60px para la imagen */
+}
 
-  }
-  
-  #inicio-sesion label {
-    display: block; /* Convierte las etiquetas en bloques para mostrarlas en líneas separadas */
-    margin-bottom: 10px; /* Espacio entre las etiquetas y los campos de entrada */
-  }
-  
-  #inicio-sesion input {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    padding: 8px; /* Espacio interno del campo de entrada */
-    margin-bottom: 15px; /* Espacio entre los campos de entrada */
-    box-sizing: border-box; /* Incluye el ancho del borde y el relleno en la anchura total */
-  }
-  
-  #inicio-sesion button {
-    padding: 10px 10px; /* Espacio interno del botón */
-    background-color: #44D257; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Borde redondeado */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  }
-  
-  #inicio-sesion button:hover {
-    background-color: #44D257; /* Cambia el color de fondo al pasar sobre el botón */
-  }
-  
-  .links {
-    margin-bottom: 15px; /* Ajuste de margen inferior para espacio */
-  }
-  
-  .links a {
-    text-decoration: none; /* Sin subrayado */
-    
-  }
-  
-  .links a:hover {
-    text-decoration: underline; /* Subrayado al pasar el mouse */
-  }
-    
-  
-  p a:hover {
-    text-decoration: underline; /* Subrayado al pasar el mouse */
-  }
-  
+#inicio-sesion {
+  max-width: 400px; /* Ancho máximo del formulario de inicio de sesión */
+  margin: 0 auto; /* Centra el formulario horizontalmente */
+  text-align: center; /* Centra el texto y otros elementos dentro del formulario */
+}
+
+#inicio-sesion label {
+  display: block; /* Cada etiqueta se muestra en su propia línea */
+  margin-bottom: 10px; /* Espacio debajo de cada etiqueta */
+}
+
+#inicio-sesion input {
+  width: 100%; /* Los campos de entrada ocupan todo el ancho disponible */
+  padding: 8px; /* Espacio dentro del campo de entrada */
+  margin-bottom: 15px; /* Espacio debajo de cada campo de entrada */
+  box-sizing: border-box; /* Incluye el borde y el relleno en el ancho total */
+}
+
+#inicio-sesion button {
+  padding: 10px 10px; /* Espacio dentro del botón */
+  background-color: #44D257; /* Color verde del fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Sin borde en el botón */
+  border-radius: 5px; /* Bordes redondeados de 5px para el botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+#inicio-sesion button:hover {
+  background-color: #44D257; /* El color de fondo no cambia al pasar sobre el botón (puedes ajustarlo si quieres un efecto diferente) */
+}
+
+.links {
+  margin-bottom: 15px; /* Espacio debajo de la sección de enlaces */
+}
+
+.links a {
+  text-decoration: none; /* Los enlaces no tendrán subrayado */
+}
+
+.links a:hover {
+  text-decoration: underline; /* Los enlaces se subrayan al pasar el mouse sobre ellos */
+}
+
+p a:hover {
+  text-decoration: underline; /* Los enlaces dentro de párrafos también se subrayan al pasar el mouse sobre ellos */
+}

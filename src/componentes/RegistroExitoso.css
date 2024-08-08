@@ -1,36 +1,39 @@
-/* src/componentes/RegistroExitoso.module.css */
+/* Estilo general para la página de éxito de registro */
 .registroExitoso {
   position: relative;  
   margin: 0;
   padding: 0;
   background-color: #E6DDDD;  
-  height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
-  display: flex;
+  height: 100vh; /* Hace que la página use toda la altura de la ventana del navegador */
+  display: flex; /* Organiza los elementos dentro de esta sección de manera flexible */
 }
 
+/* Estilo para el área de fondo detrás del contenido principal */
 .registroExitoso::before {
-  content: '';
-  position: absolute;
+  content: ''; /* Crea un espacio vacío */
+  position: absolute; /* Coloca este fondo en una posición específica */
   top: 30px;
   left: 25px;
   width: 96.5%;
   height: 90%;
-  background-color: #DFDEDE;
-  border: 3px solid #707070;
+  background-color: #DFDEDE; /* Un color de fondo más claro */
+  border: 3px solid #707070; /* Un borde alrededor del fondo */
 }
 
+/* Estilo para el título principal */
 h2 {
-  font-size: 70px;
-  margin-top: 130px;
-  text-align: center;
-  position: relative;
-  left: 500px;
+  font-size: 70px; /* Hace el texto grande para destacar */
+  margin-top: 130px; /* Añade un poco de espacio arriba del título */
+  text-align: center; /* Centra el título en la página */
+  position: relative; /* Permite ajustar su posición */
+  left: 500px; /* Mueve el título un poco hacia la derecha */
 }
 
+/* Estilo para el mensaje de éxito */
 .mensajeRegistroExitoso {
-  font-size: 70px;
-  margin-top: 270px;
-  text-align: center;
-  position: relative;
-  right: 180px;
+  font-size: 70px; /* Hace el texto grande para destacarse */
+  margin-top: 270px; /* Añade espacio arriba del mensaje */
+  text-align: center; /* Centra el mensaje en la página */
+  position: relative; /* Permite ajustar su posición */
+  right: 180px; /* Mueve el mensaje un poco hacia la izquierda */
 }

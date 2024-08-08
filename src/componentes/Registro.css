@@ -1,53 +1,61 @@
+/* Estilos generales del cuerpo */
 body {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    background-color: #E6DDDD;
+    position: relative; /* Permite que los elementos absolutamente posicionados dentro de body se posicionen en relación a él */
+    margin: 0; /* Elimina el margen por defecto del body */
+    padding: 0; /* Elimina el relleno por defecto del body */
+    background-color: #E6DDDD; /* Establece el color de fondo del body */
 }
 
+/* Pseudo-elemento para crear una capa de fondo adicional */
 body::before {
-    content: '';
-    position: absolute;
-    top: -2%;
-    left: 2%;
-    width: 96%;
-    height: 102%;
-    background-color: #DFDEDE;
-    border: 3px solid #707070;
-    z-index: -1;
+    content: ''; /* Contenido vacío para el pseudo-elemento */
+    position: absolute; /* Posicionamiento absoluto con respecto al body */
+    top: -2%; /* Ajusta la posición superior a -2% del contenedor */
+    left: 2%; /* Ajusta la posición izquierda a 2% del contenedor */
+    width: 96%; /* Establece el ancho del pseudo-elemento al 96% del contenedor */
+    height: 102%; /* Establece la altura del pseudo-elemento al 102% del contenedor */
+    background-color: #DFDEDE; /* Color de fondo del pseudo-elemento */
+    border: 3px solid #707070; /* Borde sólido de 3px de ancho con color #707070 */
+    z-index: -1; /* Coloca el pseudo-elemento detrás de otros elementos */
 }
 
+/* Estilos específicos para el formulario de registro */
 .registro {
-    max-width: 400px;
-    margin: 30px auto 0;
-    text-align: center;
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 30px auto 0; /* Márgenes superior de 30px, centrado horizontalmente, sin margen inferior */
+    text-align: center; /* Centra el texto dentro del formulario */
 }
 
+/* Estilos para las etiquetas dentro del formulario de registro */
 .registro label {
-    display: block;
-    margin-bottom: 10px;
+    display: block; /* Convierte las etiquetas en bloques para mostrarlas en líneas separadas */
+    margin-bottom: 10px; /* Espacio debajo de cada etiqueta */
 }
 
+/* Estilos para los campos de entrada y selectores dentro del formulario de registro */
 .registro input, .registro select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
+    width: 100%; /* Ocupa todo el ancho disponible del contenedor */
+    padding: 8px; /* Espacio interno del campo de entrada o selector */
+    margin-bottom: 15px; /* Espacio debajo de cada campo de entrada o selector */
+    box-sizing: border-box; /* Incluye el ancho del borde y el relleno en el ancho total */
 }
 
+/* Estilos para el botón dentro del formulario de registro */
 .registro button {
-    padding: 10px 20px;
-    background-color: #44D257;
-    color: black;
-    border: #707070;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 10px 20px; /* Espacio interno del botón */
+    background-color: #44D257; /* Color de fondo del botón */
+    color: black; /* Color del texto del botón */
+    border: #707070; /* Color del borde del botón */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 
+/* Estilos para el botón al pasar el mouse sobre él */
 .registro button:hover {
-    background-color: #44D257;
+    background-color: #44D257; /* Mantiene el mismo color de fondo al pasar el mouse (puedes ajustar si deseas un efecto diferente) */
 }
 
+/* Estilos para los párrafos dentro del formulario de registro */
 .registro p {
-    margin-top: 1px;
+    margin-top: 1px; /* Espacio superior para los párrafos */
 }
