@@ -1,0 +1,36 @@
+/* src/componentes/RegistroExitoso.module.css */
+.registroExitoso {
+  position: relative;  
+  margin: 0;
+  padding: 0;
+  background-color: #E6DDDD;  
+  height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+  display: flex;
+}
+
+.registroExitoso::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  width: 96.5%;
+  height: 90%;
+  background-color: #DFDEDE;
+  border: 3px solid #707070;
+}
+
+h2 {
+  font-size: 70px;
+  margin-top: 130px;
+  text-align: center;
+  position: relative;
+  left: 500px;
+}
+
+.mensajeRegistroExitoso {
+  font-size: 70px;
+  margin-top: 270px;
+  text-align: center;
+  position: relative;
+  right: 180px;
+}

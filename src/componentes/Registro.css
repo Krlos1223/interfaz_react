@@ -1,0 +1,53 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: #E6DDDD;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: -2%;
+    left: 2%;
+    width: 96%;
+    height: 102%;
+    background-color: #DFDEDE;
+    border: 3px solid #707070;
+    z-index: -1;
+}
+
+.registro {
+    max-width: 400px;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+.registro label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.registro input, .registro select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.registro button {
+    padding: 10px 20px;
+    background-color: #44D257;
+    color: black;
+    border: #707070;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.registro button:hover {
+    background-color: #44D257;
+}
+
+.registro p {
+    margin-top: 1px;
+}

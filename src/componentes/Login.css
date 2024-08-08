@@ -1,0 +1,77 @@
+/* Estilos generales del cuerpo */
+
+  
+  .login-page::before {
+    content: ''; /* Contenido vacío */
+    position: absolute; /* Posicionamiento fijo */
+    top: 10%; /* Ajuste superior a 0 */
+    left: 2%; /* Ajuste izquierdo a 0 */
+    width: 96%; /* Ancho del 100% */
+    height: 100%; /* Altura del 100% */
+    background-color: #DFDEDE; /* Color de la segunda capa */
+    border: 3px solid #707070; /* Borde sólido de 5px de ancho con color #707070 */
+    z-index: -1; /* Coloca la capa detrás de todo */
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  .logo1 {
+    max-width: 30%; /* Ajusta el ancho máximo de la imagen al tamaño del contenedor */
+  height: auto; /* Hace que la altura de la imagen se ajuste automáticamente para mantener la proporción */
+  margin: 0 auto; /* Centra horizontalmente la imagen */
+  display: block; /* Hace que la imagen se comporte como un bloque */
+  border-radius: 60px;
+  }
+  
+  #inicio-sesion {
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra horizontalmente el formulario */
+    text-align: center; /* Alinea el contenido al centro */
+
+  }
+  
+  #inicio-sesion label {
+    display: block; /* Convierte las etiquetas en bloques para mostrarlas en líneas separadas */
+    margin-bottom: 10px; /* Espacio entre las etiquetas y los campos de entrada */
+  }
+  
+  #inicio-sesion input {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 8px; /* Espacio interno del campo de entrada */
+    margin-bottom: 15px; /* Espacio entre los campos de entrada */
+    box-sizing: border-box; /* Incluye el ancho del borde y el relleno en la anchura total */
+  }
+  
+  #inicio-sesion button {
+    padding: 10px 10px; /* Espacio interno del botón */
+    background-color: #44D257; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  }
+  
+  #inicio-sesion button:hover {
+    background-color: #44D257; /* Cambia el color de fondo al pasar sobre el botón */
+  }
+  
+  .links {
+    margin-bottom: 15px; /* Ajuste de margen inferior para espacio */
+  }
+  
+  .links a {
+    text-decoration: none; /* Sin subrayado */
+    
+  }
+  
+  .links a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+  }
+    
+  
+  p a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+  }
+  

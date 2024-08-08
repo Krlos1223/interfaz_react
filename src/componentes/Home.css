@@ -1,0 +1,149 @@
+/* Estilos generales del cuerpo */
+.home {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #E6DDDD;
+  overflow: hidden;
+}
+
+/* Estilos de fondo gris claro */
+.home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  background-color: #DFDEDE;
+  border: 3px solid #707070;
+  z-index: 1; /* Fondo gris claro detrás de otros elementos */
+}
+
+/* Estilos del encabezado */
+header {
+  text-align: center;
+  position: relative;
+  z-index: 3; /* Encabezado delante de los fondos y los botones */
+}
+
+.logo {
+  max-width: 70%;
+  height: auto;
+  position: absolute;
+  top: 200px;
+  right: 280px;
+  border-radius: 90px;
+}
+
+h1 {
+  font-size: 4em; /* Ajusta el tamaño del texto según sea necesario */
+  margin: 0;
+  padding-left: 350px;
+  z-index: 2; /* Asegura que el título esté encima del fondo */
+}
+
+/* Estilos de navegación */
+.navigation {
+  width: 10px;
+  position: relative;
+  z-index: 4; /* Navegación delante del fondo gris oscuro */
+  margin-left: 50px;
+  top: -50px;
+}
+
+nav {
+  text-align: left;
+}
+
+nav img {  
+  max-width: 80px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+nav span {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+
+nav a {
+  text-decoration: none;  
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  padding: -800px;
+  pointer-events: auto; /* Permite clic en los enlaces */
+}
+
+/* Estilos para los enlaces dentro de <li> */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 45px;
+}
+
+/* Estilos del pie de página */
+footer {
+  margin-top: 50px; /* Ajusta el margen superior según sea necesario */
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .logo {
+    max-width: 50%;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  nav img {
+    max-width: 60px;
+  }
+
+  nav span {
+    font-size: 20px;
+  }
+
+  li {
+    margin-bottom: 15px;
+  }
+
+  footer {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    max-width: 40%;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  nav img {
+    max-width: 40px;
+  }
+
+  nav span {
+    font-size: 18px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  footer {
+    margin-top: 5px;
+  }
+}

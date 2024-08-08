@@ -1,0 +1,81 @@
+
+  .admin-header img {
+    max-width: 40%;
+    height: auto;
+    position: absolute;
+    top: 190px;
+    right: 350px;
+    border-radius: 90px;
+  }
+  
+  .admin-header h4 {
+    position: absolute;
+    top: -60px;
+    left: 56%;
+    transform: translateX(-50%);
+    font-size: 4em;
+  }
+  
+  #panel-administrador {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;    
+  }
+    
+  .opcion {
+    margin-bottom: -10px;
+    text-align: left;
+    
+  }
+  
+  .opcion img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: -10px;
+  }
+  
+  .opcion a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin-left: -200px;
+    margin-top: 30px;
+    vertical-align: top;
+  }
+  
+  #enlaces-inferiores {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #enlaces-inferiores .opcion:first-child {
+    margin-right: 350px;
+  }
+  
+  #enlaces-inferiores .opcion:last-child {
+    margin-right: 20px;
+  }
+  
+  #enlaces-inferiores .opcion:not(:last-child) a {
+    margin-right: 90px;
+  }
+  
+  #enlaces-inferiores .opcion:last-child p {
+    margin-left: 4px;
+  }
+  
+  #enlaces-inferiores .opcion:nth-last-child(2) p {
+    margin-left: 30px;
+  }
+  
+  #enlaces-inferiores .opcion:last-child img {
+    margin-top: -170px;
+  }
+  
+  #enlaces-inferiores .opcion:nth-last-child(2) img {
+    margin-top: -170px;
+  }
+  
